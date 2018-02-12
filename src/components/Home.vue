@@ -4,7 +4,7 @@
         <div class="content">
             <swiper :options="swiperOption" >
                 <!-- slides -->
-                <swiper-slide v-for="(item,index) in poems">
+                <swiper-slide v-for="(item,index) in poems" :key="index">
                     <div class="author">
                         <h2 class="pomeTitle">{{item.poemTitle}}</h2>
                         <span>作者：远方的音符</span>/ <span>发布：博客中国</span>

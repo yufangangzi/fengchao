@@ -10,7 +10,7 @@ axios.defaults.baseURL="http://localhost:3000";//baseURL一定要写对
 axios.interceptors.response.use((res)=>{
   return res.data;//这里统一拦截结果 把结果处理成res.data；
 })
-export let getHome=()=>{
+const getHome=()=>{
   return axios.get('/home')
-};
-
+}
+export default getHome
