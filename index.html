@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_568187_2icjwhyiyn9udi.css">
+    <title>fengchao</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <script>
+
+      var deviceWidth = document.documentElement.clientWidth;
+      var dpr=window.devicePixelRatio;
+      document.documentElement.setAttribute('data-dpr',dpr );
+      if(deviceWidth > 750) deviceWidth = 750;
+      document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+    </script>
+  </body>
+</html>
