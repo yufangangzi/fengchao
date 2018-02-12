@@ -54,8 +54,15 @@
       },
       methods:{
         showPoem(){
-          console.log(getHome())
+          console.log(getHome().then(res=>{
+              console.log(res)
+          }))
         }
+      },
+      mounted() {
+        this.$nextTick(() => {
+            this.showPoem()
+        })
       },
       components:{
         Mheader
